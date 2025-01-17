@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load your dataset
-data = pd.read_csv('/Users/naufaya/Downloads/E-Commerce Public Dataset/dataset_complete.csv')
+data = pd.read_csv('Dashboard/dataset_complete.csv')
 
 # Convert 'order_purchase_timestamp' to datetime
 data['order_purchase_timestamp'] = pd.to_datetime(data['order_purchase_timestamp'], errors='coerce')
@@ -57,7 +57,7 @@ st.bar_chart(city_revenue)
 
 # Section 4: RFM Analysis Insights
 st.header('RFM Analysis')
-rfm_data = pd.read_csv('/Users/naufaya/Downloads/E-Commerce Public Dataset/rfm_analysis.csv')
+rfm_data = pd.read_csv('Dashboard/rfm_analysis.csv')
 rfm_data_sorted = rfm_data.sort_values('Recency', ascending=False)
 st.write(rfm_data_sorted.head())
 
