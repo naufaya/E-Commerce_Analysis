@@ -105,13 +105,15 @@ To run the Streamlit dashboard, follow these steps:
    - Make sure you have Python 3.8 or higher installed.
    - Install the necessary dependencies listed in the `requirements.txt` file:
      ```bash
+     pipenv install
+     pipenv shell
      pip install -r requirements.txt
      ```
 
 3. **Run the Streamlit Dashboard**
    - In your terminal, navigate to the project directory and run the following command:
      ```bash
-     streamlit run dashboard.py
+     streamlit run dashboard/dashboard.py
      ```
 
 4. **Access the Dashboard**
